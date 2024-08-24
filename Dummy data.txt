@@ -1,0 +1,41 @@
+-- Insert data into the rooms table
+INSERT INTO rooms (room_number, capacity, rate, created_at, updated_at)
+VALUES 
+    ('101', 2, 100.00, NOW(), NOW()),
+    ('102', 2, 110.00, NOW(), NOW()),
+    ('103', 4, 150.00, NOW(), NOW()),
+    ('104', 3, 120.00, NOW(), NOW()),
+    ('105', 1, 80.00, NOW(), NOW()),
+    ('106', 2, 100.00, NOW(), NOW()),
+    ('107', 2, 110.00, NOW(), NOW()),
+    ('108', 4, 150.00, NOW(), NOW()),
+    ('109', 3, 120.00, NOW(), NOW()),
+    ('110', 1, 80.00, NOW(), NOW());
+
+-- Insert data into the customers table
+INSERT INTO customers (name, email, phone, password, created_at, updated_at)
+VALUES 
+    ('James Fallouh', 'james1@mail.com', '555-1234', '12345678', NOW(), NOW()),
+    ('John Doe', 'james2@mail.com', '555-5678', '12345678', NOW(), NOW()),
+    ('Jane Smith', 'james3@mail.com', '555-8765', '12345678', NOW(), NOW()),
+    ('Alice Johnson', 'james4@mail.com', '555-4321', '12345678', NOW(), NOW()),
+    ('Bob Brown', 'james5@mail.com', '555-6789', '12345678', NOW(), NOW()),
+    ('Charlie Davis', 'james6@mail.com', '555-9876', '12345678', NOW(), NOW()),
+    ('Eve Wilson', 'james7@mail.com', '555-3456', '12345678', NOW(), NOW()),
+    ('Frank Green', 'james8@mail.com', '555-6543', '12345678', NOW(), NOW()),
+    ('Grace Lee', 'james9@mail.com', '555-7890', '12345678', NOW(), NOW()),
+    ('Hank White', 'james10@mail.com', '555-0987', '12345678', NOW(), NOW());
+
+-- Insert data into the bookings table
+INSERT INTO bookings (customer_id, room_id, check_in_date, check_out_date, created_at, updated_at)
+VALUES 
+    (1, 1, '2024-08-01', '2024-08-05', NOW(), NOW()),
+    (2, 2, '2024-08-03', '2024-08-06', NOW(), NOW()),
+    (3, 3, '2024-08-04', '2024-08-07', NOW(), NOW()),
+    (4, 4, '2024-08-05', '2024-08-08', NOW(), NOW()),
+    (5, 5, '2024-08-06', '2024-08-09', NOW(), NOW()),
+    (6, 6, '2024-08-07', '2024-08-10', NOW(), NOW()),
+    (7, 7, '2024-08-08', '2024-08-11', NOW(), NOW()),
+    (8, 8, '2024-08-09', '2024-08-12', NOW(), NOW()),
+    (9, 9, '2024-08-10', '2024-08-13', NOW(), NOW()),
+    (10, 10, '2024-08-11', '2024-08-14', NOW(), NOW());

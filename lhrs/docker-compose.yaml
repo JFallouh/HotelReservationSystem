@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - DB_CONNECTION=pgsql
+      - DB_HOST=<your-cloud-db-host>
+      - DB_PORT=5432
+      - DB_DATABASE=lhrs_postgress
+      - DB_USERNAME=lhrs_postgress_user
+      - DB_PASSWORD=zLFDEvy4vlpbwiYuC9uMEi5m6Q2zetbi
+    ports:
+      - "80:80"
